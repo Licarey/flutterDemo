@@ -95,15 +95,92 @@ class MyHomePage extends StatelessWidget {
 //        ],
 //      );
 
-        return new Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            new Text('文本1'),
-            new Text('文本2'),
-            new Text('文本'),
-            new Text('文本!', style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0)),
-          ],
-        );
+//        return new Column(
+//          crossAxisAlignment: CrossAxisAlignment.center,
+//          mainAxisSize: MainAxisSize.min,
+//          children: <Widget>[
+//            new Text('文本1'),
+//            new Text('文本2'),
+//            new Text('文本'),
+//            new Text('文本!', style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0)),
+//          ],
+//        );
+
+    //相当于android帧布局
+//    return new Center(
+//      child: new Stack(
+//        //第一个子控件最下面
+//        alignment: new Alignment(0.6, 0.6),
+//        children: <Widget>[
+//          new Align(
+//            alignment: FractionalOffset.center,
+////          heightFactor: 40.0,
+////          widthFactor: 40.0,
+//            child: new Image.network(
+//              //加载网络图片
+//              'http://h.hiphotos.baidu.com/image/pic/item/21a4462309f790525fe7185100f3d7ca7acbd5e1.jpg',
+//              height: 300.0,
+//              width: 300.0,
+//              repeat: ImageRepeat.repeat, //图片重复方式
+//            ),
+//          ),
+//          new Opacity(
+//            opacity: 0.5, //透明度
+//            child: new Container(
+//              width: 300.0,
+//              height: 400.0,
+//              color: Colors.blue,
+//            ),
+//          ),
+//          new Opacity(
+//            opacity: 0.3,
+//            child: new Container(
+//              width: 200.0,
+//              height: 200.0,
+//              color: Colors.red,
+//            ),
+//          ),
+//        ],
+//      ),
+//    );
+  //流标签样式
+    return new Scaffold(
+      body: new Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          new Wrap(
+            spacing: 8.0, // 横向间距
+            runSpacing: 4.0, // 纵向间距
+            children: <Widget>[
+              new Chip(
+                avatar: new CircleAvatar(
+                    backgroundColor: Colors.blue.shade900,
+                    child: new Text('a')),
+                label: new Text('标签1'),
+              ),
+              new Chip(
+                avatar: new CircleAvatar(
+                    backgroundColor: Colors.blue.shade900,
+                    child: new Text('b')),
+                label: new Text('标签2'),
+              ),
+              new Chip(
+                avatar: new CircleAvatar(
+                    backgroundColor: Colors.blue.shade900,
+                    child: new Text('c')),
+                label: new Text('标签3'),
+              ),
+              new Chip(
+                avatar: new CircleAvatar(
+                    backgroundColor: Colors.blue.shade900,
+                    child: new Text('d')),
+                label: new Text('标签4'),
+              ),
+              new Center()
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
