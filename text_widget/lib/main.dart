@@ -27,7 +27,13 @@ class MyApp extends StatelessWidget {
             textAlign: TextAlign.center,//文字对齐方式
             textScaleFactor: 3.0,//文字缩放大小
             overflow: TextOverflow.ellipsis,
-            style: new TextStyle(fontWeight: FontWeight.bold , color: Colors.red),//文字样式
+            style: new TextStyle(
+                fontWeight: FontWeight.bold ,
+                fontFamily: 'serif',
+                fontSize: 26.0,
+                color: Colors.red),//文字样式
+                decoration: TextDecoration.overline,//上划线
+                decorationStyle: TextDecorationStyle.dashed,//虚线
           ),
         ),
       ),
