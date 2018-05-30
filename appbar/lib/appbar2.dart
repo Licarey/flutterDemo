@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-/**
+/**AppBar的底部widget是TabBar，但是可以使用具有PreferredSize的任何widget。
+ * 在这个应用程序中，应用程序栏的底部widget是一个TabPageSelector，
+ * 用于显示应用程序的TabBarView中所选页面的相对位置。 可以通过工具栏部中的箭头按钮，选择上一页或下一页。
  * 简单的卡片左右滑动效果 上方带索引
  */
 class AppBarBottomSample extends StatefulWidget {
