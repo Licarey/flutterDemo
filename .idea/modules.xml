@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/futterdemos.iml" filepath="$PROJECT_DIR$/futterdemos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/futterdemos_android.iml" filepath="$PROJECT_DIR$/futterdemos_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/row_widget.iml" filepath="$PROJECT_DIR$/row_widget.iml" />
     </modules>
   </component>
 </project>
