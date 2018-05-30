@@ -10,8 +10,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: new Scaffold(
         appBar: new AppBar(
-          title: new Text(
-            'Hello, flutter',
+          title: new RichText(
+            text: new TextSpan(
+              text: 'Hello ',
+              style: DefaultTextStyle.of(context).style,
+              children: <TextSpan>[
+                new TextSpan(text: 'bold', style: new TextStyle(fontWeight: FontWeight.bold)),
+                new TextSpan(text: ' world!'),
+              ],
+            ),
           ),
         ),
         body: new Center(
